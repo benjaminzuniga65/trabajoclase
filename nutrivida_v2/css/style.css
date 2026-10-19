@@ -1,0 +1,239 @@
+/* estilos generales de la pagina */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(160deg, #e6f0f7 0%, #cfe6ef 100%) fixed;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* encabezado con el logo y el menu */
+.encabezado{
+    background-color: #12355b;
+    color: #eaf4ff;
+    text-align: center;
+    padding: 25px 20px;
+    border-bottom: 4px solid #2a9d8f;
+}
+
+/* tamaño y forma del logo */
+.logo{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    float: left;
+}
+
+/* titulo NutriVida */
+.titulo-marca{
+    margin: 0;
+    font-size: 2em;
+}
+
+/* texto de abajo del titulo */
+.subtitulo-marca{
+    margin: 5px 0 0;
+    color: #a9cce3;
+}
+
+/* lista del menu de navegacion */
+.menu-lista{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 15px 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* links del menu */
+.enlace-menu{
+    text-decoration: none;
+    color: #12355b;
+    background-color: #ff8a5b;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* efecto al pasar el mouse por el menu */
+.enlace-menu:hover{
+    background-color: #e0693a;
+}
+
+/* contenedor principal, centra el contenido */
+.contenido{
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 0 15px;
+}
+
+/* caja de cada seccion de la pagina */
+.seccion{
+    background-color: #d3e4f0;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    border-left: 4px solid #2a9d8f;
+}
+
+/* titulo de cada seccion */
+.titulo-seccion{
+    color: #12355b;
+    margin-top: 0;
+}
+
+/* texto normal de cada seccion */
+.texto-seccion{
+    color: #33475b;
+}
+
+/* botones de "ver catalogo" */
+.boton{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff8a5b;
+    color: #12355b;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.boton:hover{
+    background-color: #e0693a;
+}
+
+/* fila donde van las tarjetas/imagenes */
+.galeria{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* tarjeta de cada especialidad */
+.tarjeta{
+    background-color: #f7fbff;
+    border: 1px solid #1b6ca8;
+    border-radius: 6px;
+    text-align: center;
+    width: 200px;
+    padding-bottom: 12px;
+}
+
+/* recuadro grande de imagen (seccion nosotros) */
+.espacio-imagen{
+    width: 100%;
+    height: 300px;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.espacio-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* recuadro chico de imagen (tarjetas especialidades) */
+.espacio-imagen2{
+    width: 100%;
+    height: 150px;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.espacio-imagen2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* titulo dentro de la tarjeta */
+.titulo-tarjeta{
+    margin: 10px 0 5px;
+    color: #12355b;
+    font-size: 1.05em;
+}
+
+/* texto dentro de la tarjeta */
+.texto-tarjeta{
+    margin: 0 10px;
+    font-size: 0.9em;
+    color: #33475b;
+}
+
+/* fila con los numeros/datos de la clinica */
+.dato-clinica{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* cada cuadro de dato */
+.dato-clinica div{
+    background-color: #f7fbff;
+    border: 1px solid #1b6ca8;
+    border-radius: 6px;
+    padding: 10px 15px;
+    min-width: 100px;
+}
+
+/* numero grande dentro del dato */
+.dato-clinica strong{
+    display: block;
+    font-size: 1.3em;
+    color: #12355b;
+}
+
+/* caja que envuelve el video, solo para el borde y las esquinas */
+.video-caja{
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #1b6ca8;
+    background-color: #000;
+}
+
+/* el video, mantiene su propia proporcion */
+.mi-video{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    display: block;
+}
+
+/* pie de pagina */
+.pie{
+    background-color: #12355b;
+    text-align: center;
+    padding: 20px;
+    color: #eaf4ff;
+}
+
+/* nombre de la clinica en el pie */
+.pie-marca{
+    margin: 4px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* datos de contacto en el pie */
+.pie-texto{
+    margin: 4px 0;
+}
+
+/* linea de copyright, un poco mas tenue */
+.pie-copyright{
+    opacity: 0.75;
+    font-size: 0.85em;
+}
